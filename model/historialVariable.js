@@ -1,10 +1,10 @@
 var Sequelize = require ('sequelize');
 
-var Historial = sequelize.define('historial',{
+var HistorialVariable = sequelize.define('historialvariable',{
     id:{type: Sequelize.INTEGER, primaryKey:true, autoIncrement:true},
     idUsuario:{type: Sequelize.INTEGER},
     idRegistro:{type: Sequelize.INTEGER},
-    idTabla:{type: Sequelize.BOOLEAN, allowNull: false, defaultValue: true},
+    idVariable:{type: Sequelize.INTEGER},
     fechaOperacion:{type: Sequelize.DATE},
     tipoOperacion:{type: Sequelize.STRING},
     obs:{type: Sequelize.TEXT},
@@ -14,4 +14,4 @@ var Historial = sequelize.define('historial',{
     freezeTableName: true
 });
 
-module.exports = Historial;
+module.exports = HistorialVariable;
