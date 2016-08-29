@@ -8,3 +8,4 @@ var conexion = new Sequelize('regapp01','root','',{
         idle: 10000
     }
 });
+
